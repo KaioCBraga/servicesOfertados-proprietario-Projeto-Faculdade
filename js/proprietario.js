@@ -18,7 +18,6 @@ function loadCustomServices() {
     customServicesList.appendChild(serviceItem);
   });
 
-
   document.querySelectorAll(".delete-btn").forEach((button) => {
     button.addEventListener("click", function () {
       deleteService(this.getAttribute("data-id"));
@@ -80,6 +79,5 @@ function updatePreview(service) {
         <p><strong>Garantia:</strong> ${service.warranty}</p>
     `;
 }
-
 
 document.addEventListener("DOMContentLoaded", loadCustomServices);
