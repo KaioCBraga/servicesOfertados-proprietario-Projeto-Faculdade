@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/servicosOfertados-cliente.css" />
+    <link rel="stylesheet" href="styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="styles/footer.css" type="text/css" />
+
+    <title>Serviços Ofertados</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo" />
+        </div>
+
+        <div class="user-options">
+          <a href="#" class="user-option">
+            <i>👤</i>
+            <span>Login</span>
+          </a>
+          <a href="#" class="user-option">
+            <i>⚙️</i>
+            <span>Configurações</span>
+          </a>
+        </div>
+
+        <button class="mobile-menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#" class="nav-link">Página Inicial</a></li>
+            <li><a href="#" class="nav-link active">Serviços Ofertados</a></li>
+            <li><a href="#" class="nav-link">Gestão de Ordem de Serviço</a></li>
+            <li><a href="#" class="nav-link">Serviços Realizados</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu">
+      <nav>
+        <ul class="mobile-nav-links">
+          <li>
+            <a href="#" class="mobile-nav-link"><i>🏠</i>Página Inicial</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-nav-link"><i>🛠️</i>Serviços Ofertados</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-nav-link"
+              ><i>👨‍🔧</i>Gestão de Ordem de Serviço</a
+            >
+          </li>
+          <li>
+            <a href="#" class="mobile-nav-link"><i>🚗</i>Serviços Realizados</a>
+          </li>
+          <div class="menu-divider"></div>
+          <li>
+            <a href="#" class="mobile-nav-link"><i>👤</i>Login</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-nav-link"><i>⚙️</i>Configurações</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-overlay"></div>
+    <main>
+      <h1>
+        <a href="./servicesOfertados-cliente.html">Serviços Ofertados</a>
+        <a href="./servicosOfertados-proprietario.html">Adicionar Serviço</a>
+      </h1>
+      <div id="serviceDetails" class="service-details">
+        <div class="service-details-content">
+          <h2>Selecione um Serviço Ofertado</h2>
+          <p>Clique em um dos serviços abaixo para ver mais detalhes</p>
+        </div>
+      </div>
+      <div id="serviceContainer" class="service-container">
+        <div class="service-card" data-id="revisao-completa">
+          <img
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/revisao-completa-FE7cIx6u0vFj9T5UpaXConZpnmVsas.jpeg"
+            alt="Revisão Completa"
+          />
+          <h3>Revisão Completa</h3>
+          <p>
+            Revisão geral do veículo, incluindo freios, suspensão e sistemas
+            elétricos
+          </p>
+          <p><strong>Preço: R$ 249,90</strong></p>
+        </div>
+        <div class="service-card" data-id="troca-oleo">
+          <img
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/oleo.jpg-e6hFOMwKegJAPfiDUK9T4ATR8NolCm.jpeg"
+            alt="Troca de Óleo"
+          />
+          <h3>Troca de Óleo</h3>
+          <p>Troca completa de óleo e filtro para todos os tipos de veículos</p>
+          <p><strong>Preço: R$ 89,90</strong></p>
+        </div>
+        <div class="service-card" data-id="alinhamento-3d">
+          <img
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/alinhamento-3d-VeMVWSogw9BmWmiALq5rX87F382h1z.webp"
+            alt="Alinhamento 3D"
+          />
+          <h3>Alinhamento 3D</h3>
+          <p>Alinhamento preciso das rodas utilizando tecnologia 3D</p>
+          <p><strong>Preço: R$ 119,90</strong></p>
+        </div>
+        <div class="service-card" data-id="troca-pneu">
+          <img
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/troca_de_pneu.jpg-Ywk6prtxpe1GbPYzB0eP6dbHcAW3gS.jpeg"
+            alt="Troca de Pneu"
+          />
+          <h3>Troca de Pneu</h3>
+          <p>Troca de pneu, balanceamento e calibragem</p>
+          <p><strong>Preço: R$ 49,90</strong></p>
+        </div>
+        <div class="service-card" data-id="suspensao">
+          <img
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/suspensao-carro.jpg-CuFGRFeXOUwzBgCxswaxWLllKsCEPh.jpeg"
+            alt="Revisão de Suspensão"
+          />
+          <h3>Revisão de Suspensão</h3>
+          <p>Verificação e manutenção completa do sistema de suspensão</p>
+          <p><strong>Preço: R$ 179,90</strong></p>
+        </div>
+        <div class="service-card" data-id="freios">
+          <img
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/freios-S0gRaaeLDzjSRkXUXJGubogejdmkW8.webp"
+            alt="Manutenção de Freios"
+          />
+          <h3>Manutenção de Freios</h3>
+          <p>
+            Revisão e manutenção do sistema de freios, incluindo troca de
+            pastilhas
+          </p>
+          <p><strong>Preço: R$ 149,90</strong></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="contato">
+        <h4>Entre em contato</h4>
+        <div class="whatssap">
+          <img src="images/icons/whatsapp.svg" alt="" height="30px" />
+          <span>(xx) xxxxxxxxx</span>
+        </div>
+        <div class="telefone">
+          <img src="images/icons/telefone.svg" alt="" height="30px" />
+          <span>(xx) xxxxxxxxx</span>
+        </div>
+      </div>
+      <div class="footer-main">
+        <a href="index.html"
+          ><img src="images/logo.png" alt="" height="200px"
+        /></a>
+        <span>© Copyright 2024</span>
+      </div>
+      <div class="redes-sociais">
+        <h4>Redes Sociais</h4>
+        <div class="facebook">
+          <a href="">
+            <img src="images/icons/facebook.svg" alt="" height="30px" />
+            <span>Facebook</span>
+          </a>
+        </div>
+        <div class="instagram">
+          <a href=""
+            ><img src="images/icons/instagram.svg" alt="" height="30px" />
+            <span>Instagram</span></a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/servicosOfertados-cliente.js"></script>
+    <script src="js/header.js"></script>
+  </body>
+</html>

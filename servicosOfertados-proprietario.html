@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/servicosOfertados-proprietario.css" />
+    <link rel="stylesheet" href="styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="styles/footer.css" type="text/css" />
+
+    <title>Serviços Ofertados</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo" />
+        </div>
+
+        <div class="user-options">
+          <a href="#" class="user-option">
+            <i>👤</i>
+            <span>Login</span>
+          </a>
+          <a href="#" class="user-option">
+            <i>⚙️</i>
+            <span>Configurações</span>
+          </a>
+        </div>
+
+        <button class="mobile-menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#" class="nav-link">Página Inicial</a></li>
+            <li><a href="#" class="nav-link active">Serviços Ofertados</a></li>
+            <li><a href="#" class="nav-link">Gestão de Ordem de Serviço</a></li>
+            <li><a href="#" class="nav-link">Serviços Realizados</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu">
+      <nav>
+        <ul class="mobile-nav-links">
+          <li>
+            <a href="#" class="mobile-nav-link"><i>🏠</i>Página Inicial</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-nav-link"><i>🛠️</i>Serviços Ofertados</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-nav-link"
+              ><i>👨‍🔧</i>Gestão de Ordem de Serviço</a
+            >
+          </li>
+          <li>
+            <a href="#" class="mobile-nav-link"><i>🚗</i>Serviços Realizados</a>
+          </li>
+          <div class="menu-divider"></div>
+          <li>
+            <a href="#" class="mobile-nav-link"><i>👤</i>Login</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-nav-link"><i>⚙️</i>Configurações</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-overlay"></div>
+    <main>
+      <h1>
+        <a href="./servicesOfertados-cliente.html">Serviços Ofertados</a>
+        <a href="./servicosOfertados-proprietario.html">Adicionar Serviço</a>
+      </h1>
+      <form id="addServiceForm">
+        <h2>Adicionar Novo Serviço</h2>
+        <label for="name">Nome do Serviço:</label>
+        <input type="text" id="name" required />
+        <label for="description">Descrição:</label>
+        <textarea id="description" required></textarea>
+        <label for="price">Preço:</label>
+        <input type="number" id="price" step="0.01" required />
+        <label for="image">URL da Imagem:</label>
+        <input type="url" id="image" required />
+        <label for="detailedDescription">Descrição Detalhada:</label>
+        <textarea id="detailedDescription" required></textarea>
+        <label for="estimatedTime">Tempo Estimado:</label>
+        <input type="text" id="estimatedTime" required />
+        <label for="warranty">Garantia:</label>
+        <input type="text" id="warranty" required />
+        <button type="submit">Adicionar Serviço</button>
+      </form>
+      <div id="successMessage" class="success-message" style="display: none">
+        Serviço adicionado com sucesso!
+      </div>
+      <div id="preview" class="preview"></div>
+      <div class="custom-services">
+        <h2>Serviços Personalizados</h2>
+        <div id="customServicesList"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="contato">
+        <h4>Entre em contato</h4>
+        <div class="whatssap">
+          <img src="images/icons/whatsapp.svg" alt="" height="30px" />
+          <span>(xx) xxxxxxxxx</span>
+        </div>
+        <div class="telefone">
+          <img src="images/icons/telefone.svg" alt="" height="30px" />
+          <span>(xx) xxxxxxxxx</span>
+        </div>
+      </div>
+      <div class="footer-main">
+        <a href="index.html"
+          ><img src="images/logo.png" alt="" height="200px"
+        /></a>
+        <span>© Copyright 2024</span>
+      </div>
+      <div class="redes-sociais">
+        <h4>Redes Sociais</h4>
+        <div class="facebook">
+          <a href="">
+            <img src="images/icons/facebook.svg" alt="" height="30px" />
+            <span>Facebook</span>
+          </a>
+        </div>
+        <div class="instagram">
+          <a href=""
+            ><img src="images/icons/instagram.svg" alt="" height="30px" />
+            <span>Instagram</span></a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/servicosOfertados-proprietario.js"></script>
+    <script src="js/header.js"></script>
+  </body>
+</html>
